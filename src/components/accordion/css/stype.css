@@ -1,0 +1,40 @@
+.accordion-header {
+  background-color: var(--THIRD-COLOR);
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  border-bottom: 1px solid white;
+  display: flex;
+  align-items: center;
+    border-radius: 0 0 0px 15px;
+      box-shadow: -3px 3px 10px gray;
+      margin-bottom: 4px;
+      padding: 1rem;
+}
+
+.accordion-item ul li {
+  padding: 5px 3rem;
+  list-style-type: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  color: black;
+}
+.accordion-item ul li:hover {
+  background-color: whitesmoke;
+  font-size: larger;
+  padding-inline: 2.5rem;
+}
+
+/* .accordion-item ul  li::before{
+   content: "📂";
+   margin-inline: .5rem;
+
+} */
+
+div.accordion {
+  margin: -10px 0;
+  width: var(--COMPONENT-WIDTH);
+}

@@ -1,0 +1,67 @@
+.select-container {
+  position: relative;
+  margin: var() 0;
+  width: var(--COMPONENT-WIDTH);
+  margin: var(--MARGIN-TOP-COMPONENT) 0;
+}
+
+.select-container select {
+  cursor: pointer;
+  height: 41.6px;
+  appearance: none;
+  width: 100%;
+  padding: 10px 10px;
+
+  border: 2px solid var(--SECONDARY-COLOR);
+  border-radius: 4px;
+  outline: none;
+  background-color: var(--BACKGROUND-COLOR);
+}
+.select-container select:focus {
+  border-color: var(--MAIN-COLOR);
+
+  font-weight: bold;
+}
+.select-container label {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: var(--SECONDARY-COLOR);
+  pointer-events: none;
+  transition: 0.3s ease all;
+  background: white;
+  padding: 0 4px;
+  background-color: var(--BACKGROUND-COLOR);
+}
+/* Move label when select is focused or has text */
+.select-container select:focus + label,
+.select-container select:not(:placeholder-shown) + label {
+  top: -10px;
+  right: 8px;
+  font-size: 12px;
+}
+
+div.select-container .error {
+  border-color: red;
+}
+div.select-container label.error {
+  color: red;
+}
+div.select-container span {
+  margin-inline: 10px;
+  color: red;
+  font-size: 0.8rem;
+}
+div.select-container span::before {
+  content: "⛔";
+  font-size: x-small;
+}
+div.select-container svg.error {
+  color: red;
+}
+div.select-container svg {
+  position: absolute;
+  top: 12px;
+  color: var(--SECONDARY-COLOR);
+  left: 8px;
+}

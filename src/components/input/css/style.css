@@ -1,0 +1,61 @@
+ 
+.input-container {
+  position: relative;
+  margin: var(--MARGIN-TOP-COMPONENT) 0;
+ 
+  width: var(--COMPONENT-WIDTH)
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px 10px;
+  font-size: 12px;
+  border: 2px solid var(--SECONDARY-COLOR);
+  border-radius: 4px;
+   background-color: var(--BACKGROUND-COLOR);
+  outline: none;
+}
+.input-container input:focus {
+  border-color: var(--MAIN-COLOR);
+
+  font-weight: bold;
+}
+.input-container label {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+  color: var(--SECONDARY-COLOR);
+  pointer-events: none;
+  transition: 0.3s ease all;
+  background: white;
+   background-color: var(--BACKGROUND-COLOR);
+  padding: 0 4px;
+}
+/* Move label when input is focused or has text */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+  top: -10px;
+  right: 8px;
+  font-size: 12px;
+}
+
+div.input-container .error {
+  border-color: red;
+}
+div.input-container label.error {
+  color: red;
+}
+div.input-container span {
+  margin-inline: 10px;
+  color: red;
+  font-size: 0.8rem;
+}
+div.input-container span::before {
+  content: "⛔";
+  font-size: x-small;
+}
+
+option{
+   font-size: 1rem;
+    
+}

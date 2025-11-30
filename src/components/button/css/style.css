@@ -1,0 +1,45 @@
+:root {
+  --ERROR-COLOR: red;
+  --SUCCESS-COLOR: green;
+  --INFO-COLOR: blue;
+  --ALARM-COLOR: gray;
+  --BUTTON-WIDTH: 6rem;
+}
+ .buttonComponent span{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+ }
+.buttonComponent {
+  color: var(--SUCCESS-COLOR);
+  border-color: var(--SUCCESS-COLOR);
+  background-color: transparent;
+  border-radius: 5px;
+  height: 2rem;
+  width: var(--BUTTON-WIDTH);
+  margin: 4px 0;
+  cursor: pointer;
+    margin-inline: 2px;
+}
+.buttonComponent:hover {
+  color: white;
+  border-color: white;
+  background-color: var(--SUCCESS-COLOR);
+}
+.buttonComponentError {
+  color: var(--ERROR-COLOR);
+  border-color: var(--ERROR-COLOR);
+  background-color: transparent;
+  border-radius: 5px;
+  height: 2rem;
+  width: var(--BUTTON-WIDTH);
+  margin: 4px 0;
+  cursor: pointer;
+    margin-inline: 2px;
+}
+.buttonComponentError:hover {
+  color: white;
+  border-color: white;
+  background-color: var(--ERROR-COLOR);
+}
